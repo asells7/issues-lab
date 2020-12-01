@@ -22,7 +22,7 @@ summary(storms)
 
 Look at the variable names: 
 ```{r}
-Names(storms)
+names(storms)
 ```
 
 ## Step 2: Exploratory visualization
@@ -33,9 +33,9 @@ ggplot(data = storms, aes(x = category, y = pressure)) +
               alpha = 0.5,
               aes(color = category),
               show.legend = FALSE) +
-  labs(x = "StorM CategorRY", 
+  labs(x = "Storm Category", 
        y = "Air pressure at storm center (millibars)"
-       ) +
-  theme_void()
+       )
+
 ```
 
