@@ -8,6 +8,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(dplyr)
+library(janitor)
 ```
 
 ## Step 1: Explring `storms` data
@@ -16,7 +17,7 @@ The `storms` data are built-in to the `dplyr` package..
 
 Get a summary for each variable: 
 ```{r}
-summary(storm)
+summary(storms)
 ```
 
 Look at the variable names: 
